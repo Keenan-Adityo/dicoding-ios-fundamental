@@ -13,6 +13,12 @@
 		1324B4622B787D5200C069D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1324B4602B787D5200C069D8 /* Main.storyboard */; };
 		1324B4642B787D5400C069D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1324B4632B787D5400C069D8 /* Assets.xcassets */; };
 		1324B4672B787D5400C069D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1324B4652B787D5400C069D8 /* LaunchScreen.storyboard */; };
+		1324B46F2B7898FD00C069D8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324B46E2B7898FD00C069D8 /* Game.swift */; };
+		1324B4722B789A6F00C069D8 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324B4702B789A6F00C069D8 /* GamesTableViewCell.swift */; };
+		1324B4732B789A6F00C069D8 /* GamesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1324B4712B789A6F00C069D8 /* GamesTableViewCell.xib */; };
+		139187872B7E06350008FA66 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139187862B7E06350008FA66 /* NetworkService.swift */; };
+		139187892B7E0A440008FA66 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139187882B7E0A440008FA66 /* ImageDownloader.swift */; };
+		13D229F42B7BB3EE00C8504C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D229F32B7BB3EE00C8504C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1324B4632B787D5400C069D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1324B4662B787D5400C069D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1324B4682B787D5400C069D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1324B46E2B7898FD00C069D8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1324B4702B789A6F00C069D8 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		1324B4712B789A6F00C069D8 /* GamesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesTableViewCell.xib; sourceTree = "<group>"; };
+		139187862B7E06350008FA66 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		139187882B7E0A440008FA66 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		13D229F32B7BB3EE00C8504C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		1324B4592B787D5200C069D8 /* dicoding-ios-fundamental */ = {
 			isa = PBXGroup;
 			children = (
+				139187802B7DC72B0008FA66 /* App */,
+				139187812B7DC7620008FA66 /* FileSystem */,
+				139187822B7DC7A00008FA66 /* NetworkSource */,
+				139187832B7DC7C10008FA66 /* View */,
+			);
+			path = "dicoding-ios-fundamental";
+			sourceTree = "<group>";
+		};
+		139187802B7DC72B0008FA66 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				1324B45A2B787D5200C069D8 /* AppDelegate.swift */,
 				1324B45C2B787D5200C069D8 /* SceneDelegate.swift */,
-				1324B45E2B787D5200C069D8 /* ViewController.swift */,
-				1324B4602B787D5200C069D8 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		139187812B7DC7620008FA66 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
 				1324B4632B787D5400C069D8 /* Assets.xcassets */,
 				1324B4652B787D5400C069D8 /* LaunchScreen.storyboard */,
 				1324B4682B787D5400C069D8 /* Info.plist */,
 			);
-			path = "dicoding-ios-fundamental";
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		139187822B7DC7A00008FA66 /* NetworkSource */ = {
+			isa = PBXGroup;
+			children = (
+				1324B46E2B7898FD00C069D8 /* Game.swift */,
+				139187862B7E06350008FA66 /* NetworkService.swift */,
+				139187882B7E0A440008FA66 /* ImageDownloader.swift */,
+			);
+			path = NetworkSource;
+			sourceTree = "<group>";
+		};
+		139187832B7DC7C10008FA66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1324B45E2B787D5200C069D8 /* ViewController.swift */,
+				13D229F32B7BB3EE00C8504C /* DetailViewController.swift */,
+				1324B4702B789A6F00C069D8 /* GamesTableViewCell.swift */,
+				1324B4712B789A6F00C069D8 /* GamesTableViewCell.xib */,
+				1324B4602B787D5200C069D8 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +178,7 @@
 				1324B4672B787D5400C069D8 /* LaunchScreen.storyboard in Resources */,
 				1324B4642B787D5400C069D8 /* Assets.xcassets in Resources */,
 				1324B4622B787D5200C069D8 /* Main.storyboard in Resources */,
+				1324B4732B789A6F00C069D8 /* GamesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1324B45F2B787D5200C069D8 /* ViewController.swift in Sources */,
+				1324B46F2B7898FD00C069D8 /* Game.swift in Sources */,
+				139187892B7E0A440008FA66 /* ImageDownloader.swift in Sources */,
 				1324B45B2B787D5200C069D8 /* AppDelegate.swift in Sources */,
+				13D229F42B7BB3EE00C8504C /* DetailViewController.swift in Sources */,
+				1324B4722B789A6F00C069D8 /* GamesTableViewCell.swift in Sources */,
 				1324B45D2B787D5200C069D8 /* SceneDelegate.swift in Sources */,
+				139187872B7E06350008FA66 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46BS4RX25L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "dicoding-ios-fundamental/Info.plist";
+				INFOPLIST_FILE = "dicoding-ios-fundamental/FileSystem/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +378,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46BS4RX25L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "dicoding-ios-fundamental/Info.plist";
+				INFOPLIST_FILE = "dicoding-ios-fundamental/FileSystem/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
